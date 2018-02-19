@@ -33,7 +33,7 @@
 
 .projekt {
   width: 49%;
-  position: absolute;
+  position: relative;
   margin: 0 0 2% 0;
   overflow: hidden;
   transition: all 500ms;
