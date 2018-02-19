@@ -25,7 +25,7 @@
 
 .portfolio {
   width: 70%;
-  margin: auto auto 0 auto;
+  margin: 100px auto 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -33,7 +33,7 @@
 
 .projekt {
   width: 49%;
-  position: relative;
+  position: absolute;
   margin: 0 0 2% 0;
   overflow: hidden;
   transition: all 500ms;
