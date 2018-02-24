@@ -1,0 +1,42 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+<title>Liveticker</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="shortcut icon" href="/img/liveticker.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/css/hfs_liveticker.css" />
+<script type="text/javascript" language="javascript">
+/* <![CDATA[ */
+var hfs_TP = {'jShow':'12','waitScreen':'/img/vs_scotty/ajax-loader-monitor-big.gif','basicUrl':'http://fahrplan.oebb.at/bin/stboard.exe/dn?L=vs_liveticker&','input':'Steinach%20am%20Brenner%20Bahnhst','evaId':'1270303','dirInput':'','boardType':'dep','selectDate':'today','time':'now','productsFilter':'1111111111111111','additionalTime':'0','useEquiv':'yes','outputMode':'tickerDataOnly','maxJourneys':'50','minJOpt':'3','cookieName':'hfs_dep','showArr':'0','tools':false}
+var hfs_tTexts = {"code":["","Ihr Browser unterst&#252;tzt diese Funktionalit&#228;t nicht.","Keine g&#252;ltigen Daten gefunden.","Im angegebenen Zeitraum verkehren an dieser Station keine der ausgew&#228;hlten Verkehrsmittel.","","Bitte klicken Sie hier um eine Station einzugeben."],"initialtitle":"Liveticker","loadText":""}
+</script>
+<script type="text/javascript" src="/js/hfs_liveticker.js"></script>
+<script type="text/javascript" src="/js/cookies.js"></script>
+</head>
+<body onload="deleteCookie('hfs_dep');hfs_MTicker.init();">
+<div id="hfs_mtc">
+<div id="header">
+<div id="station">Steinach am Brenner Bahnhst</div>
+<div id="tools" style="display:none;">
+<a id="treload" title="Aktualisieren"><img src="/img/ticker_reload.png" border="0" alt="Aktualisieren" /></a>
+<a id="tconfig" title="Einstellungen bearbeiten"><img src="/img/ticker_config.png" border="0" alt="Einstellungen bearbeiten" /></a>
+</div>
+<div id="logo"><img src="/img/logo_oebb_blau.gif" border="0" alt="OEBB"></div>
+</div>
+<div id="content" align="center" style="clear:both;">
+<div id="wait" align="center">
+<br />
+<br />
+<br />
+<img src="/img/vs_scotty/ajax-loader-monitor-big.gif" border="0" alt="Bitte warten..." />
+</div>
+</div>
+<div id="footer"></div>
+</div>
+<div id="oti">&nbsp;</div>
+</body>
+</html>
