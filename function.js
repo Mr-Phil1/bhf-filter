@@ -3,10 +3,10 @@ $(document).ready(function(){
   $('.filter').on('change',function(){
     var select = $(this).val();
 
-    $('.anzeige').removeClass('fadein').addClass('fadeout');
+    $('.projekt').removeClass('fadein').addClass('fadeout');
 
     setTimeout(function(){
-      $('.anzeige').each(function(){
+      $('.projekt').each(function(){
         if(!($(this).hasClass(select))) {
           $(this).addClass('none');
         }
@@ -14,7 +14,7 @@ $(document).ready(function(){
     },510);
 
     setTimeout(function(){
-      $('.anzeige').each(function(){
+      $('.projekt').each(function(){
         if($(this).hasClass(select)) {
           $(this).removeClass('none');
         }
@@ -22,7 +22,7 @@ $(document).ready(function(){
     },520);
 
     setTimeout(function(){
-      $('.anzeige').each(function(){
+      $('.projekt').each(function(){
         if($(this).hasClass(select)) {
           $(this).removeClass('fadeout').addClass('fadein');
         }
@@ -35,7 +35,7 @@ $(document).ready(function(){
 // TUTORIAL DIRECTION AWARE HOVER
 // ###########################################################
 
-  $('.anzeige').stop().mouseenter(function(e){
+  $('.projekt').stop().mouseenter(function(e){
 
     var x = e.pageX - this.offsetLeft;
     var y = e.pageY - this.offsetTop;
@@ -71,7 +71,7 @@ $(document).ready(function(){
 
   });
 
-  $('.anzeige').stop().mouseleave(function(e){
+  $('.projekt').stop().mouseleave(function(e){
 
     var x = e.pageX - this.offsetLeft;
     var y = e.pageY - this.offsetTop;
