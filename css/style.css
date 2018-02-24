@@ -24,7 +24,7 @@
 /* ################################################################## */
 
 
-.portfolio {
+/* .portfolio {
   width: 70%;
   margin: 100px auto 0 auto;
   display: flex;
@@ -39,7 +39,7 @@
   overflow: hidden;
   transition: all 500ms;
 }
-/*
+
 .projekt .overlay {
   background-color: #ff6600;
   width: 100%;
