@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- jmejas -->
+  <meta charset="utf-8">
+  <title>&Ouml;ffi Filter</title>
+  <link rel="stylesheet" href="css/bhf.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <script type="text/javascript" src="js/popup.js"></script>
+
+
+</head>
+<body>
+
+<nav id="steuerungmitdetails">
+<ul>
+  <li><a href="#">Startseite</a></li>
+  <li>
+    <details>
+      <summary>Unsere Produkte</summary>
+        <details>
+          <summary>Produktkategorie A</summary>
+          <ul>
+            <li><a href="#">Produkt A1</a></li>
+            <li><a href="#">Produkt A2</a></li>
+          </ul>
+        </details>
+        <details>
+          <summary>Produktkategorie B</summary>
+          <ul>
+            <li><a href="#">Produkt B1</a></li>
+            <li><a href="#">Produkt B2</a></li>
+            <li><a href="#">Produkt B3</a></li>
+          </ul>
+        </details>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary>Stationsinfo</summary>
+      <ul>
+        <li><a href="#">Leistung 1</a></li>
+        <li><a href="javascript:popup('http://fahrplan.oebb.at/bin/stboard.exe/dn?L=vs_liveticker&evaId=8100108&boardType=dep&productsFilter=1111111111111111&dirInput=&tickerID=arr&start=yes&eqstops=false&showJourneys=12&additionalTime=0')">Innsbruck HBF</a></li>
+      </ul>
+    </details>
+  </li>
+  <li><a href="#">Kontakt</a></li>
+</ul>
+</nav>
+
+
+<form action="#">
+ <input type=button value="Popup Fenster öffnen" onClick="javascript:popup('http://fahrplan.oebb.at/bin/stboard.exe/dn?L=vs_liveticker&evaId=8100108&boardType=dep&productsFilter=1111111111111111&dirInput=&tickerID=arr&start=yes&eqstops=false&showJourneys=12&additionalTime=0')">
+</form>
+
+</body>
+</html>
