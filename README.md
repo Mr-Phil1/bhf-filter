@@ -3,4 +3,5 @@
 - [x] added the Popup function
 - [ ] change the monitor style
 - [ ] make the site repositive
-- [ ] this is an incomplete item
+<!-- - [ ] this is an incomplete item -->
+<!-- - [ ] -->
