@@ -133,5 +133,4 @@ $(document).ready(function(){
     var yDiff = y - y2;
     return ((xDiff * xDiff) + (yDiff * yDiff));
   }
- console.log(.monitor);
 });
