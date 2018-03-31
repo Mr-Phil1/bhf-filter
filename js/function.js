@@ -3,10 +3,10 @@ $(document).ready(function(){
   $('.filter').on('change',function(){
     var select = $(this).val();
 
-    $('.projekt').removeClass('fadein').addClass('fadeout');
+    $('.monitor').removeClass('fadein').addClass('fadeout');
 
     setTimeout(function(){
-      $('.projekt').each(function(){
+      $('.monitor').each(function(){
         if(!($(this).hasClass(select))) {
           $(this).addClass('none');
         }
@@ -14,7 +14,7 @@ $(document).ready(function(){
     },510);
 
     setTimeout(function(){
-      $('.projekt').each(function(){
+      $('.monitor').each(function(){
         if($(this).hasClass(select)) {
           $(this).removeClass('none');
         }
@@ -22,7 +22,7 @@ $(document).ready(function(){
     },520);
 
     setTimeout(function(){
-      $('.projekt').each(function(){
+      $('.monitor').each(function(){
         if($(this).hasClass(select)) {
           $(this).removeClass('fadeout').addClass('fadein');
         }
@@ -35,7 +35,7 @@ $(document).ready(function(){
 // TUTORIAL DIRECTION AWARE HOVER
 // ###########################################################
 
-  $('.projekt').stop().mouseenter(function(e){
+  $('.monitor').stop().mouseenter(function(e){
 
     var x = e.pageX - this.offsetLeft;
     var y = e.pageY - this.offsetTop;
@@ -71,7 +71,7 @@ $(document).ready(function(){
 
   });
 
-  $('.projekt').stop().mouseleave(function(e){
+  $('.monitor').stop().mouseleave(function(e){
 
     var x = e.pageX - this.offsetLeft;
     var y = e.pageY - this.offsetTop;
@@ -133,5 +133,5 @@ $(document).ready(function(){
     var yDiff = y - y2;
     return ((xDiff * xDiff) + (yDiff * yDiff));
   }
-
+ console.log(.monitor);
 });
