@@ -39,6 +39,14 @@ header {
   height: 7rem;
 }
 
+cpright {
+  position: absolute;
+  color: rgb(69, 131, 255)
+  background-color: rgb(255, 92, 0);
+  width:10px;
+  margin-bottom: auto;
+  }
+
 header nav#normal {
   color: #C8354E;
   display: inline-block;
