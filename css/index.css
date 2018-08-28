@@ -39,7 +39,8 @@ header {
   height: 7rem;
 }
 
-cpright {
+div cpright {
+  font-size: 100px;
   position: absolute;
   color: rgb(69, 131, 255)
   background-color: rgb(255, 92, 0);
